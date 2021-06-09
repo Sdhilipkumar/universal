@@ -1,0 +1,17 @@
+<div class="page-main masthead-offset-primary">
+  <div class="wrapper-content">
+    <div class="ebox">
+      <div class="checkbox-container">
+        <ux-checkbox [(value)]="checkboxValue">Standard</ux-checkbox>
+        <ux-checkbox [indeterminateValue]="-1" [(value)]="indeterminateCheckboxValue">Indeterminate</ux-checkbox>
+        <ux-checkbox [clickable]="false">Not clickable</ux-checkbox>
+      </div>
+    </div>
+    <div class="ebox">
+      <div uxRadioButtonGroup class="radio-button-container">
+        <ux-radio-button name="migration-radio" option="1">Standard</ux-radio-button>
+        <ux-radio-button name="migration-radio" option="2" [clickable]="false">Not clickable</ux-radio-button>
+      </div>
+    </div>
+  </div>
+</div>

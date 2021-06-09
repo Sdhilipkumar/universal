@@ -1,0 +1,15 @@
+<div class="page-main masthead-offset-primary">
+  <div class="wrapper-content">
+    <div class="ebox">
+      <ux-alert
+        *ngFor="let alert of alerts"
+        [type]="alert.type"
+        [dismissible]="true"
+        (dismiss)="remove(alert)"
+      >
+        <ux-icon uxAlertIcon [name]="alert.icon"></ux-icon>
+        <span [innerHTML]="alert.description"></span>
+      </ux-alert>
+    </div>
+  </div>
+</div>
